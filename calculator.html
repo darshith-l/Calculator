@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Document</title>
+   <script>
+      var v="";
+      var result;
+      function fuc(value)
+      {
+         
+         v+=value
+         document.getElementById("dis").value=v;
+      }
+
+      function compute()
+      {
+         v= eval(v);
+         document.getElementById("dis").value=v;
+      }
+   </script>
+</head>
+
+<body>
+   <section class="heading">
+   <h1>LOGICAL</h1>
+   <h1>CALCULATOR</h1>
+    </section>
+   <section class="sect">
+   <table>
+      <tr>
+         <td colspan="3"><input type="text" id="dis" class="inputp"></td>
+         <td colspan="1"><input type="button" value="1" onclick="fuc('1')"></td>
+
+      </tr>
+      <tr>
+         <td><input type="button" value="1" onclick="fuc('1')"></td>
+         <td><input type="button" value="2" onclick="fuc('2')"></td>
+         <td><input type="button" value="3" onclick="fuc('3')"></td>
+         <td><input type="button" value="&" onclick="fuc('&')"></td>
+      </tr>
+      
+      <tr>
+         <td><input type="button" value="4" onclick="fuc('4')"></td>
+         <td><input type="button" value="5" onclick="fuc('5')"></td>
+         <td><input type="button" value="6" onclick="fuc('6')"></td>
+         <td><input type="button" value="|" onclick="fuc('|')"></td>
+      </tr>
+
+      <tr>
+         <td><input type="button" value="7" onclick="fuc('7')"></td>
+         <td><input type="button" value="8" onclick="fuc('8')"></td>
+         <td><input type="button" value="9" onclick="fuc('9')"></td>
+         <td><input type="button" value="~" onclick="fuc('~')"></td>
+      </tr>
+
+      <tr>
+         <td><input type="button" value="0" onclick="fuc('0')"></td>
+         <td><input type="button" value="." onclick="fuc('.')"></td>
+         <td><input type="button" value="=" onclick="compute()"></td>
+         <td><input type="button" value="^" onclick="fuc('^')"></td>
+      </tr>
+
+   </table>
+</section>
+
+   <footer>
+      Logic calculator can be used for calculating binary operations and comes handy for performing complex operations
+   </footer>
+</body>
+</html>
